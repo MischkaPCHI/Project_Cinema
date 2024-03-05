@@ -32,9 +32,9 @@ const serverWorks = async () => {
 
 serverWorks();
 
-const addBanner = (film, description, scr) => {
+const addBanner = (film, description, srcID) => {
     const bannerElement = document.createElement('a');
-    bannerElement.href = `https://www.kinopoisk.ru/film/${scr}/`;
+    bannerElement.href = `https://www.kinopoisk.ru/film/${srcID}/`;
     bannerElement.className = 'banner';
     bannerElement.append(addImg(film), addGenre(film), addMovieDetails(film, description));
     return bannerElement;
