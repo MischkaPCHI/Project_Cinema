@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: auto;
+    padding: 10px;
+}
+
+.banner-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner {
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.genre {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffc107;
+    padding: 6px 14px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 20px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.genre:hover {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.349), black);
+    padding: 10px;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.movie-details h3 {
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #ffc107;
+}
+
+  .movie-details p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movie-details p:hover{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.year{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
